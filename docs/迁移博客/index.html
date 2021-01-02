@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>迁移博客 - 记闲</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="有涯" /><meta name="description" content="半推半就的将博客从 Hexo 上迁移到 Hugo。
+" /><meta name="keywords" content="无事, 小白" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.80.0 with theme even" />
+
+
+<link rel="canonical" href="http://localhost:1313/%E8%BF%81%E7%A7%BB%E5%8D%9A%E5%AE%A2/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.b5a744db6de49a86cadafb3b70f555ab443f83c307a483402259e94726b045ff.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/Han.css">
+
+
+<meta property="og:title" content="迁移博客" />
+<meta property="og:description" content="半推半就的将博客从 Hexo 上迁移到 Hugo。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/%E8%BF%81%E7%A7%BB%E5%8D%9A%E5%AE%A2/" />
+<meta property="article:published_time" content="2021-01-02T12:34:52+08:00" />
+<meta property="article:modified_time" content="2021-01-02T12:34:52+08:00" />
+<meta itemprop="name" content="迁移博客">
+<meta itemprop="description" content="半推半就的将博客从 Hexo 上迁移到 Hugo。">
+<meta itemprop="datePublished" content="2021-01-02T12:34:52+08:00" />
+<meta itemprop="dateModified" content="2021-01-02T12:34:52+08:00" />
+<meta itemprop="wordCount" content="965">
+
+
+
+<meta itemprop="keywords" content="博客,记录,踩坑," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="迁移博客"/>
+<meta name="twitter:description" content="半推半就的将博客从 Hexo 上迁移到 Hugo。"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700;900&family=Long+Cang&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">记闲</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">主页</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">归档</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">标签</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">分类</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">关于</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">记闲</a>
+</div>
+  
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">主页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">归档</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">标签</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">分类</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">关于</a>
+      </li>
+    <a href="http://localhost:1313/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">迁移博客</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2021-01-02 </span>
+        <div class="post-category">
+            <a href="/categories/%E9%9A%8F%E7%AC%94/"> 随笔 </a>
+            </div>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#迁移">迁移</a>
+      <ul>
+        <li><a href="#踩坑">踩坑</a></li>
+        <li><a href="#even-主题">Even 主题</a></li>
+      </ul>
+    </li>
+    <li><a href="#vs-code-配置">vs code 配置</a>
+      <ul>
+        <li><a href="#还想加入的功能">还想加入的功能</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <p>半推半就的将博客从 Hexo 上迁移到 Hugo。</p>
+<p>几天前闲来无事，就想着把博客系统升级一下，于是开始折腾。刚开始一切正常，但运行了<code>npm update</code>之后卡了一下，紧接着直接从终端退出来了。我一看，发生了什么事？再一看，哦，原来是 windows terminal 被直接删除了啊。删就删吧，还拉着<code>AppDate</code>、<code>scoop</code>和一众文档一起。</p>
+<p>当时的心情复杂极了……</p>
+<p>事情既然发生了，那就这样吧。花了五个多小时把系统和软件重新装好，但博客源文件没有备份，是找不回来了，于是想着换一个框架试试。平时就发现挺多人用的是 Hugo，我也了解了一下。<strong>依赖少</strong>，速度快，稳定性强，就决定是你了。</p>
+<p>最后，对花了我好长时间弄的 Hexo-NexT 博客说声再见。</p>
+<p><img src="https://s3.ax1x.com/2021/01/02/sSUNM8.png" alt="遗照"></p>
+<h1 id="迁移">迁移</h1>
+<p>迁移过程其实挺简单的，虽然源文件没了，不过网站还在。就三篇文章，直接扒下来就可以。选定的 Even 主题也可以直接配置 valine 评论系统，把 AppID 和 AppKey 填上就行。</p>
+<h2 id="踩坑">踩坑</h2>
+<p>即使是简单易用的 Hugo，一开始使用也遇到了很多问题。</p>
+<p>最先是日期，一直显示 <code>0001-01-01</code>，翻了各种文档都找不出来原因，最后发现是它只认 <code>yyyy-MM-dd</code> ，不认 <code>yyyy-M-d</code>。服了。</p>
+<p>还有，logo 字体文件只有英文和数字，在手机端看的时候，两个大大的黑体弄得我一脸懵逼，最后直接从 Google Font 再引入一个字体完事。虽然个性化的 logo 是有了，但是效果好像不怎么好，看起来皱巴巴的。</p>
+<h2 id="even-主题">Even 主题</h2>
+<p>Hugo 上没有一个像 NexT 这样强大的不行的主题，不过感觉是完全够用的。我最后挑中的 Even 也很合我胃口。在 Even 的基础上进行了一些微调。不得不说，Hugo 的根目录与主题目录保持一致，想改个东西直接复制一下到根目录改就行，实在是方便。</p>
+<p>在找文档的时候，看到有说法是要开启自定义 <code>custom.css</code>，需要安装 <code>Hugo-extended</code>、<code>nodejs</code>、<code>Yarn</code> 这些。但实际测试下来发现并不需要，直接按照 Even 主题的文档设置就行。</p>
+<p>另外导入了 iconfont 和 googlefont，所以说，以后升级肯定很方便……</p>
+<h1 id="vs-code-配置">vs code 配置</h1>
+<p>这次基本全在 vs code 上完成，就连 markdown 的编辑也是，毕竟大家都用 <code>electron</code> 了，开个 Typora 都要一百多兆内存，算了算了。</p>
+<p>vs code 用起来是真不错，自带的源代码管理一点推送就挂……但是用终端就可以，百思不得其解。然后在一个论坛里找到了问题症结所在，原来 vs code 本身只会搜索 id_rsa，我改了私钥的文件名，它就找不到了。</p>
+<h2 id="还想加入的功能">还想加入的功能</h2>
+<p>有可能的话，其实还有一些想弄的功能，留待以后吧（要是主题自己更新了就太棒了）。</p>
+<ul>
+<li>搜索</li>
+<li>暗色模式</li>
+</ul>
+    </div>
+
+    <div class="post-copyright">
+  
+  
+  <p class="copyright-item">
+    <span class="item-title">许可协议</span>
+    <span class="item-content"><i class="myiconfont">&#xe600;</i>&#160<a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a>&#160转载请保留原文链接及作者</span>
+  </p>
+</div><footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/%E5%8D%9A%E5%AE%A2/">博客</a>
+          <a href="/tags/%E8%AE%B0%E5%BD%95/">记录</a>
+          <a href="/tags/%E8%B8%A9%E5%9D%91/">踩坑</a>
+          </div>
+      <nav class="post-nav">
+        
+        <a class="next" href="/%E6%B1%A4%E7%A5%9E%E6%BC%AB%E7%94%BB%E5%AE%8C%E7%BB%93%E6%9C%89%E6%84%9F/">
+            <span class="next-text nav-default">汤神漫画完结有感</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+  <div id="vcomments"></div>
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+  <script type="text/javascript">
+    new Valine({
+        el: '#vcomments' ,
+        appId: 'Q3O6eDBV9H1JlwPRuKQvmzE4-9Nh9j0Va',
+        appKey: 'pREWrrA7utEUQsDcw193fuul',
+        notify:  false ,
+        verify:  false ,
+        avatar:'robohash',
+        placeholder: '说点什么吧...',
+        visitor:  false 
+    });
+  </script>
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      
+  
+<div class="copyright">
+    <span class="power-by">
+      由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+    </span>
+    <span class="division">|</span>
+    <span class="theme-info">
+      主题 - 
+      <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+    </span>
+  
+    
+  
+    <span class="copyright-year">
+      &copy; 
+      2019 - 
+      2021<span class="heart"><i class="iconfont icon-heart"></i></span><span>有涯</span>
+    </span>
+</div>
+  
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.c12618f9a600c40bd024996677e951e64d3487006775aeb22e200c990006c5c7.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>
