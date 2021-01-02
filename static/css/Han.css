@@ -19,6 +19,10 @@
     font-family: "Noto Serif SC";
 }
 
+.logo {
+    font-family: "Long Cang" !important;
+}
+
 body {
     font-weight: 500;
 }

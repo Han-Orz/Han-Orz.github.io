@@ -1,0 +1,2 @@
+# 记得还要在 ~/.bash_logout 中添加，来关闭 ssh-agent
+ssh-agent -k

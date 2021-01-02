@@ -1,0 +1,12 @@
+# 在.profile 或  .bashrc 添加
+# Git for windows 提供的方式
+# ssh-agent auto-launch (0 = agent running with key; 1 = w/o key; 2 = not run.)
+agent_run_state=$(ssh-add -l >| /dev/null 2>&1; echo $?)
+if   [ $agent_run_state = 2 ]; then
+  eval $(ssh-agent -s)
+  ssh-add C:/Users/Han/.ssh/id_rsa_git
+elif [ $agent_run_state = 1 ]; then
+  ssh-add C:/Users/Han/.ssh/id_rsa_git
+fi
+# 记得还要在 ~/.bash_logout 中添加，来关闭 ssh-agent
+# ssh-agent -k
