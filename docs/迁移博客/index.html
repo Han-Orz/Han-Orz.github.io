@@ -39,6 +39,7 @@
 <link href="/sass/main.min.b5a744db6de49a86cadafb3b70f555ab443f83c307a483402259e94726b045ff.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 <link rel="stylesheet" href="/css/Han.css">
+<link rel="stylesheet" href="/css/dark.css">
 
 
 <meta property="og:title" content="迁移博客" />
@@ -51,7 +52,7 @@
 <meta itemprop="description" content="半推半就的将博客从 Hexo 上迁移到 Hugo。">
 <meta itemprop="datePublished" content="2021-01-02T12:34:52+08:00" />
 <meta itemprop="dateModified" content="2021-01-02T12:34:52+08:00" />
-<meta itemprop="wordCount" content="965">
+<meta itemprop="wordCount" content="1066">
 
 
 
@@ -118,6 +119,7 @@
       </li><li class="menu-item">
         <a class="menu-item-link" href="/about/">关于</a>
       </li>
+    <button onclick="switchDarkMode()">🌓</button>
     <a href="http://localhost:1313/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
   </ul>
 </nav>
@@ -154,6 +156,7 @@
     <li><a href="#vs-code-配置">vs code 配置</a>
       <ul>
         <li><a href="#还想加入的功能">还想加入的功能</a></li>
+        <li><a href="#已加入暗色模式">已加入暗色模式</a></li>
       </ul>
     </li>
   </ul>
@@ -186,6 +189,8 @@
 <li>搜索</li>
 <li>暗色模式</li>
 </ul>
+<h2 id="已加入暗色模式">已加入暗色模式</h2>
+<p>目前看来这个主题加入暗色模式遥遥无期，还是动手自己弄了。主要是定义全局变量，然后 <code>js</code> 去加 <code>.class</code>，基本是东抄一点西抄一点，最后的效果我还是挺满意的。另外把 iconfont 的引用方式改为 symbol 引用，舒服了。</p>
     </div>
 
     <div class="post-copyright">
@@ -193,7 +198,7 @@
   
   <p class="copyright-item">
     <span class="item-title">许可协议</span>
-    <span class="item-content"><i class="myiconfont">&#xe600;</i>&#160<a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a>&#160转载请保留原文链接及作者</span>
+    <span class="item-content"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-cc"></use></svg>&#160<a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a>&#160转载请保留原文链接及作者</span>
   </p>
 </div><footer class="post-footer">
       <div class="post-tags">
@@ -278,6 +283,7 @@
 
 
 
+<script src="/js/Han.js"></script>
 
 
 </body>
