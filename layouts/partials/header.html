@@ -15,6 +15,7 @@
         <a class="menu-item-link" href="{{ .URL | safeURL }}">{{ .Name }}</a>
       </li>
     {{- end }}
+    <button onclick="switchDarkMode()">🌓</button>
     <a href="{{ .Site.RSSLink }}" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
   </ul>
 </nav>
