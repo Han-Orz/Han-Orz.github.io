@@ -113,7 +113,7 @@ button {
     box-shadow: 0 2px 2px var(--han-color-sh);
 }
 
-article, .mobile-menu-item, .mobile-menu-list {
+article, .mobile-menu-item, .mobile-menu-list, .post .post-footer {
     border-color: var(--han-color-hr) !important;
 }
 
